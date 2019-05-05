@@ -1,0 +1,15 @@
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\GildedRoseData.deps.json
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\GildedRoseData.runtimeconfig.json
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\GildedRoseData.runtimeconfig.dev.json
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\GildedRoseData.dll
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\GildedRoseData.pdb
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Core.dll
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Core.xml
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.csproj.CoreCompileInputs.cache
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.AssemblyInfoInputs.cache
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.AssemblyInfo.cs
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.csproj.CopyComplete
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.dll
+C:\dev\GildedRose\GildedRoseData\GildedRoseData\obj\Debug\netcoreapp2.2\GildedRoseData.pdb
