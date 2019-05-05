@@ -71,7 +71,7 @@ namespace GildedRoseApi.Controllers
                    var createResult = await _manager.AddItem(item);
                     if (createResult != null)
                     {
-                       return CreatedAtAction("GetItem", new {id = item.Name}, item);
+                       return CreatedAtAction("GetItem", new {id = item.Id}, item.Id);
                     }
                     else
                     {

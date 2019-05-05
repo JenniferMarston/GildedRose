@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "cdea58b7-c49b-4987-b5e1-be41c4137c08",
+		"name": "GildedRose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login user jenna : https://localhost:5001/api/Authentication/logins  (Creates Bearer Token)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTU3MDcyNjkxLCJpc3MiOiJodHRwOi8vZ2lsZGVkcm9zZS5jb20iLCJhdWQiOiJodHRwOi8vZ2lsZGVkcm9zZS5jb20ifQ.2nhrpJWWddfN-4kke9ITzr79NnfBJf_25dYnlV0I-PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"jenna\",\n \"password\":\"Jenna123!\"}\n"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Authentication/logins",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Authentication",
+						"logins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user admin : https://localhost:5001/api/Authentication/logins  (Creates Bearer Token) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\",\n \"password\":\"Admin123!\"}\n"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Authentication/logins",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Authentication",
+						"logins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Items, Authorize : https://localhost:5001/api/items  (Add Bearer token to Header)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTY5OTk5NTIsImlzcyI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSIsImF1ZCI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSJ9.4bhTcVeoh3K_jl3nx0YcX4cDRyNiN4-wK3y2O_V_DBs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/items/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Logins, Authorize, Admins Only : https://localhost:5001/api/Authentication/logins (Add Bearer Token)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTY1NzMyNjUsImlzcyI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSIsImF1ZCI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSJ9.bBouqoZ3kY8RNPg0pGu9IoikWFBmYd4yZETM8_2aSiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Authentication/logins",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Authentication",
+						"logins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase --https://localhost:5001/api/items/purchase/",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "df1f1d32-7907-4ce4-b426-19f0cccb470a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTY5ODY2NjksImlzcyI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSIsImF1ZCI6Imh0dHA6Ly9naWxkZWRyb3NlLmNvbSJ9.ZIEir7pH3KSfdoQ170YMwqF1JNjXUvJcSZ9_D-vVVZ0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n\t\"ItemId\": 2,\n\t\"QuantityWanted\":3\n }"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/items/purchase/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"items",
+						"purchase",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Item Auth-Aministrator Only https://localhost:5001/api/Items",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTU3MTAxNzk5LCJpc3MiOiJodHRwOi8vZ2lsZGVkcm9zZS5jb20iLCJhdWQiOiJodHRwOi8vZ2lsZGVkcm9zZS5jb20ifQ.KoW6ZuFK374x2mhuUA5jaLpVQtU6HcFE4cnHkn_O8qI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 3,\n        \"name\": \"New and Improved Standard Snow Globe\",\n        \"description\": \"Your average Snow Globe\",\n        \"price\": 5.99,\n        \"quantityInStock\": 20\n    }"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -27,8 +27,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GildedRoseData\GildedRoseData\GildedRoseData.csproj" />
-    <ProjectReference Include="..\GildedRoseApi\GildedRoseApi.csproj" />
+    <ProjectReference Include="..\GildedRoseApi\GildedRoseApi\GildedRoseApi.csproj" />
+    <ProjectReference Include="..\GildedRoseData\GildedRoseData\GildedRoseData.csproj" />
   </ItemGroup>
 
 </Project>
