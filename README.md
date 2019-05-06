@@ -3,7 +3,7 @@
 Gilded Rose  API
 
 The Gilded Rose solution is made up of 3 projects built on ASP.Net Core 2.2:
- GildedRoseAPI  
+GildedRoseAPI  
 GildedRoseData 
 GildedRoseApi.Tests
 
@@ -32,12 +32,12 @@ I used ASPCore MVC Testing and Xunit for the test harness and tests.  I chose th
 
 
 Postman Collection
-This is a convenience collection of API calls against the project.  
+A convenience collection of API calls against the project.  
 
 Note: the API  requires authentication with bearer tokens, so you must first run the Login API call to obtain a bearer token.  Please place that token in the authentication header of subsequent calls.
 
 Swagger
-When run, the Api opens to its Swagger page, and this can be used as a model for postman requests.
+The Api project opens to its Swagger page, and this can be used as a model for postman requests.
 
 Example Request/Response:
 
